@@ -55,6 +55,12 @@
 		&-btn{
 			color: #00887f;
 			margin-bottom: 20px;
+			transition: all .3s ease-in-out;
+			width: 100px;
+			&:hover{
+				color: #04dacb;
+				text-shadow: 6px 4px 2px #00887f, -6px -4px 2px #b902ca;
+			}
 		}
 	}
 }
