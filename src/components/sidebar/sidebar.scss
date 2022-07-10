@@ -1,7 +1,6 @@
 .sidebar{
 	padding: 10px;
 	margin: 0 20px;
-	width: 300px;
 	box-shadow:  0px 2px 10px 0px #b902ca;
 
 	&>.title{
@@ -36,6 +35,31 @@
 		}
 		.title{
 			font-size: 14px;
+			max-width: 150px;
+		}
+	}
+}
+
+@media (max-width: 1200px){
+	.sidebar{
+		&__post{
+			&-img{
+				width: 65px;
+				height: 65px;
+			}
+		}
+	}
+}
+@media (max-width: 1024px){
+	.sidebar{
+		&__post{
+			&-img{
+				width: 85px;
+				height: 85px;
+			}
+			time{
+				width: 150px;
+			}
 		}
 	}
 }

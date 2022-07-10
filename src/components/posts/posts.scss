@@ -76,3 +76,32 @@
 		}
 	}
 }
+@media (max-width: 1024px){
+	.posts{
+		margin-bottom: 50px;
+		&__post{
+			width: 750px;
+		}
+	}
+}
+@media (max-width: 900px){
+	.posts{
+		&__post{
+			width: 600px;
+		}
+	}
+}
+@media (max-width: 720px){
+	.posts{
+		&__post{
+			width: 400px;
+		}
+	}
+}
+@media (max-width: 500px){
+	.posts{
+		&__post{
+			width: 250px;
+		}
+	}
+}
