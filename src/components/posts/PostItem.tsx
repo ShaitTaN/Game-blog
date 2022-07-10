@@ -10,7 +10,7 @@ const PostItem: FC = () => {
       </div>
       <img
         className="posts__post-img"
-        src="https://preview.colorlib.com/theme/thequest/img/blog/2.jpg"
+        src="https://cdn.vox-cdn.com/thumbor/NYY78d4Jip27Tu3J0u5yNdDyQ9g=/0x0:5160x3836/1200x800/filters:focal(3536x933:4360x1757)/cdn.vox-cdn.com/uploads/chorus_image/image/70956082/Cover_1.0.jpg"
       />
       <time className="posts__post-date" dateTime="2020-04-01">
         1 April 2020
