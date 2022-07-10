@@ -6,9 +6,28 @@
 		margin-bottom: 20px;
 		text-transform: uppercase;
 		text-shadow: 6px 4px 2px #00887f, -6px -4px 2px #b902ca;
+		animation-duration: .3s;
+		animation-name: glitch;
+		animation-iteration-count: infinite;
+		animation-timing-function: cubic-bezier(0,-0.66,.73,1.24);
 	}
 	.container{
 		display: flex;
 		justify-content: center;
+	}
+}
+
+@keyframes glitch {
+	0%{
+		text-shadow: 6px 4px 2px #00887f, -6px -4px 2px #b902ca;
+	}
+	30%{
+		text-shadow: -6px -4px 2px #00887f, 6px 4px 2px #b902ca;
+	}
+	70%{
+		text-shadow: -4px -6px 2px #00887f, 4px 6px 2px #b902ca;
+	}
+	100%{
+		text-shadow: -6px -4px 2px #00887f, 6px 4px 2px #b902ca;
 	}
 }
