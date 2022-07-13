@@ -1,0 +1,21 @@
+.postPage{
+	.posts{
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 20px;
+
+		&__post{
+			width: calc(50% - 10px);
+		}
+	}
+}
+
+@media(max-width: 900px){
+	.postPage{
+		.posts{
+			&__post{
+				width: 100%;
+			}
+		}
+	}
+}

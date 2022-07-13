@@ -7,6 +7,9 @@ const PostsList: FC = () => {
     <div className="posts">
       <PostItem/>
       <PostItem/>
+      <PostItem/>
+      <PostItem/>
+      <PostItem/>
     </div>
   );
 };
