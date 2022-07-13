@@ -6,6 +6,9 @@
 
 		&__post{
 			width: calc(50% - 10px);
+			img{
+				height: 320px;
+			}
 		}
 	}
 }
@@ -15,6 +18,9 @@
 		.posts{
 			&__post{
 				width: 100%;
+				img{
+					height: auto;
+				}
 			}
 		}
 	}
