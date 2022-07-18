@@ -6,7 +6,7 @@ const FavouritesPage:FC = () => {
 	return (
 		<div className='favourites'>
 			<div className="container">
-				<h2 className='title'>Your Favourites</h2>
+				<div className='favourites__title'>Your Favourites</div>
 				<PostsList />
 			</div>
 		</div>

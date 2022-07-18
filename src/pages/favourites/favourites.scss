@@ -1,10 +1,22 @@
 .favourites{
-	.container>.title{
+	&__title{
 		text-align: center;
 		margin-bottom: 20px;
-		text-shadow: 0px 0px 17px #fec859;
+		color: #fff;
+		text-shadow: 0px 0px 17px #00887f;
+		animation: glowing infinite 1.5s ease-in-out;
+		text-transform: uppercase;
+		font-size: 24px;
+		background-color: #0f1316;
+		width: 200px;
+		padding: 20px;
+		margin: 0 auto;
+		border-radius: 10px;
+		border: 1px solid #00887f;
+		box-shadow: 0px 2px 10px 0px #00887f;
 	}
 	.posts{
+		margin-top: 20px;
 		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 20px;
@@ -12,6 +24,21 @@
 		&__post{
 			width: calc(50% - 10px);
 		}
+	}
+}
+
+@keyframes glowing{
+	0%{
+		text-shadow: 0px 0px 10px #00887f;
+		box-shadow: 0px 2px 10px 0px #00887f;
+	}
+	50%{
+		text-shadow: 0px 0px 17px #00887f;
+		box-shadow: 0px 2px 17px 0px #00887f;
+	}
+	100%{
+		text-shadow: 0px 0px 10px #00887f;
+		box-shadow: 0px 2px 10px 0px #00887f;
 	}
 }
 
