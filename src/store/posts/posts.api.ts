@@ -4,7 +4,7 @@ import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 export const postsApi = createApi({
 	reducerPath: 'posts/api',
 	baseQuery: fetchBaseQuery({
-		baseUrl: 'http://127.0.0.1:3004/'
+		baseUrl: 'http://localhost:3004/'
 	}),
 	endpoints: build => ({
 		getPosts: build.query<IPost[], void>({
@@ -15,4 +15,4 @@ export const postsApi = createApi({
 	})
 })
 
-export const {useGetPostsQuery} = postsApi
+export const {useGetPostsQuery, useLazyGetPostsQuery} = postsApi

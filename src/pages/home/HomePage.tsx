@@ -5,6 +5,7 @@ import { useGetPostsQuery } from '../../store/posts/posts.api'
 import './home.scss'
 
 const HomePage: FC = () => {
+	// TODO: Error handle
 	const {isLoading,isError,data} = useGetPostsQuery()
 
 	return (
