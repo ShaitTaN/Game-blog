@@ -9,7 +9,7 @@ const HomePage: FC = () => {
   const { isLoading, isError, data } = useGetPostsQuery();
 
   if (isLoading) {
-    return <h1>Loading...</h1>;
+    return <h1 style={{textAlign: 'center'}}>Loading...</h1>;
   }
 
   return (

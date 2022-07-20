@@ -12,12 +12,7 @@ const PostsList: FC<Props> = ({ posts }) => {
     <div className="posts">
       {posts.map((post) => (
         <PostItem
-          content={post.content}
-          data={post.data}
-          title={post.title}
-          description={post.description}
-          imageSrc={post.imageSrc}
-          id={post.id}
+          post={post}
           key={post.id}
         />
       ))}

@@ -28,6 +28,9 @@
 			&:hover{
 				fill: #fec859;
 			}
+			&.active{
+				fill: #fec859;
+			}
 		}
 		&-img{
 			margin-bottom: 20px;
@@ -35,7 +38,7 @@
 		&-date{
 			background-color: #00887f;
 			color: #fff;
-			width: 100px;
+			width: 140px;
 			text-align: center;
 			font-size: 14px;
 			font-weight: 700;
