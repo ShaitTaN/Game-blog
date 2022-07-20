@@ -5,7 +5,7 @@ import { postsReducer } from './posts/posts.slice';
 export const store = configureStore({
   reducer: {
 		[postsApi.reducerPath]: postsApi.reducer,
-		'posts': postsReducer
+		posts: postsReducer
 	},
 	middleware: getDefaultMiddleware => getDefaultMiddleware().concat(postsApi.middleware)
 })

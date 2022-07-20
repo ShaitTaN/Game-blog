@@ -5,5 +5,4 @@ export interface IPost {
   content: string;
   imageSrc: string;
   data: string;
-  isFavourite: boolean;
 }

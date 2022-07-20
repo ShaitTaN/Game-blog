@@ -1,9 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
+import { IPost } from "../../models/IPost";
 
-const SidebarPost = () => {
+interface Props{
+	post: IPost
+}
+
+const SidebarPost: FC<Props> = ({post}) => {
   const bgImg = {
     backgroundImage:
-      "url('https://genapilot.ru/wp-content/uploads/2021/12/too-angry-to-die-11-360x240.jpg')",
+      `url(${post.imageSrc})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center center",
@@ -12,9 +17,9 @@ const SidebarPost = () => {
     <div className="sidebar__post">
       <div className="sidebar__post-info">
         <div className="sidebar__post-img" style={bgImg} />
-      <h3 className="title">The best games of 2020</h3>
+      <h3 className="title">{post.title}</h3>
       </div>
-        <time dateTime="2020-04-01">1 September 2020</time>
+        <time>{post.data}</time>
     </div>
   );
 };

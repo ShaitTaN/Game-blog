@@ -1,6 +1,11 @@
 import React, { FC } from "react";
+import { IPost } from "../../models/IPost";
 
-const PostItem: FC = () => {
+interface Props{
+	post: IPost
+}
+
+const PostItem: FC<IPost> = ({imageSrc,content,data,description,title}) => {
   return (
     <div className="posts__post">
       <div className="posts__post-fav">
@@ -10,16 +15,14 @@ const PostItem: FC = () => {
       </div>
       <img
         className="posts__post-img"
-        src="https://cdn.vox-cdn.com/thumbor/NYY78d4Jip27Tu3J0u5yNdDyQ9g=/0x0:5160x3836/1200x800/filters:focal(3536x933:4360x1757)/cdn.vox-cdn.com/uploads/chorus_image/image/70956082/Cover_1.0.jpg"
+        src={imageSrc}
       />
       <time className="posts__post-date" dateTime="2020-04-01">
-        1 April 2020
+        {data}
       </time>
-      <h2 className="title">The best games of 2020</h2>
+      <h2 className="title">{title}</h2>
       <p className="posts__post-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-        dolorem voluptate quos harum corrupti voluptates nulla amet saepe, et
-        officiis?
+        {description}
       </p>
       <a className="posts__post-btn" href="#">
         Read More
