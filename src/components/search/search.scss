@@ -22,14 +22,15 @@
   position: absolute;
   top: 110%;
   max-height: 300px;
-  background-color: #181a1b;
+  background-color: #0f1316;
   overflow: scroll;
   overflow-x:hidden;
+	width: 100%;
 }
 .search__item{
   border-bottom: 1px solid black;
   height: 80px;
-  padding: 3px;
+  padding: 5px;
   display: flex;
   align-items: center;
   cursor: pointer;

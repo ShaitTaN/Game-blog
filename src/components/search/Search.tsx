@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import useDebounce from '../../hooks/useDebounce'
 import { IPost } from '../../models/IPost'
 import { useGetPostsQuery } from '../../store/posts/posts.api'
 import './search.scss'
@@ -7,6 +8,7 @@ import SearchItems from './SearchItem'
 
 const Search: FC = () => {
   const [value, setValue] = React.useState('')
+	const debouncedValue = useDebounce(value)
   const [searchedItems, setSearchedItems] = React.useState<IPost[]>([])
   const {data,isLoading,isError} = useGetPostsQuery()
 
@@ -21,8 +23,8 @@ const Search: FC = () => {
   }
   
   React.useEffect(() => {
-    handleSearch(value)
-  }, [value])
+    handleSearch(debouncedValue)
+  }, [debouncedValue])
   
   return (
     <div className="search">
