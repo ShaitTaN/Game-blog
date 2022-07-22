@@ -27,7 +27,7 @@
   overflow-x:hidden;
 }
 .search__item{
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid black;
   height: 80px;
   padding: 3px;
   display: flex;
@@ -38,8 +38,8 @@
   border-bottom: none;
 }
 .search__item img {
-  height: 70px;
-  border: 1px solid grey;
+	width: 100px;
+	height: 100%;
   border-radius: 5px;
   margin-right: 5px;
 }
@@ -47,7 +47,9 @@
   margin-bottom: 5px;
   height: 36px;
   overflow: hidden;
+	font-size: 14px;
 }
 .search__item-info span{
-  color: #5bc95b;
+  color: #00887f;
+	font-size: 12px;
 }
